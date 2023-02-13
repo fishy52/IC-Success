@@ -1,0 +1,93 @@
+/*ANIMATIONS*/
+@keyframes fadeInFromBottomLetters {
+    0% {
+        letter-spacing: -80px;
+        opacity: 0;
+        transform: translateY(40vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Standard Overrides*/
+
+html {
+    color-scheme: dark;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 45, 114, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*IDS*/
+
+/*CLASSES*/
+
+.bigCenterText {
+    position: relative;
+    letter-spacing: 25px;
+    font-size: 800%;
+    text-align: center;
+    margin-top: 30vh;
+    animation: fadeInFromBottomLetters 1.5s ease-out;
+}
+
+.smallCenterText {
+    font-size: 500%;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 50vh;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.headLineText {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 500%;
+}
+
+/* CSS Class für observer: hidden Properties */
+.onscroll_hidden {
+    position: relative;
+    opacity: 0;
+    transform: translateY(10vh);
+    transition: opacity 3s, transform 2s;
+}
+
+/* CSS Class für Observer: visible Properties */
+.onscroll_visible {
+    opacity: 1;
+    transform: translateY(0vh);
+}
+
+.detailsText {
+    font-size: 200%;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.contentHolder {
+    height: 80vh;
+}
